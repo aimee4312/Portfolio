@@ -1,0 +1,27 @@
+.dockbar {
+    background-color: rgba(105, 152, 233, 0.90);
+    height: 10%;
+    width: 70vh;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-icon {
+    cursor: pointer;
+    border-radius: 12px;
+    height: 80%; 
+    max-height: 100%; 
+    max-width: 100%; 
+    margin: 5px;
+}
+
+.tooltip {
+    background-color: #E8E8EB;
+    color: #242026;
+}

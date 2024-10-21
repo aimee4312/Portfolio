@@ -1,10 +1,16 @@
-import './App.css';
-import Header from './components/Header.js'
+import Header from './components/Header.js';
+import DockBar from './components/DockBar.js';
+import AppIcon from './components/AppIcon.js';
+
 function App() {
-  
   return (
-    <div >
-      <Header/>
+    <div>
+      <Header />
+      {/* <AppIcon 
+        icon="/images/dock bar/finder.png"
+        onClick={() => console.log('App 1 clicked')} 
+      /> */}
+      <DockBar />
     </div>
   );
 }
