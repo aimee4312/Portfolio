@@ -1,20 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types';
-
-const AppIcon = ({ icon, onClick }) => {
-    return (
-    <div className='app-icon'>
-        <img> src={icon} style={{ width: '50px', height: '50px' }}</img>
-    </div>
-  )
-}
-
-AppIcon.propTypes = {
-    icon: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
-  };
-
-export default AppIcon;
 /* 
 Attribution Links
 Bio: <a href="https://www.flaticon.com/free-icons/avatar" title="avatar icons">Avatar icons created by Freepik - Flaticon</a>

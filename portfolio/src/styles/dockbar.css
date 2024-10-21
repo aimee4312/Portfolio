@@ -22,6 +22,6 @@
 }
 
 .tooltip {
-    background-color: #E8E8EB;
-    color: #242026;
+    background-color: #E8E8EB !important;
+    color: #242026 !important;
 }
