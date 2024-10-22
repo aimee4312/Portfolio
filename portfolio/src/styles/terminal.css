@@ -1,0 +1,55 @@
+.terminal-modal {
+    background-color: #004476;
+    width: 50%;
+    height: 50%;
+    border-radius: 4%;
+}
+
+.terminal {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.input-form {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-left: 5%;
+}
+
+.input-form input {
+    flex: 1;
+    background-color: #ffffff00;
+    border: none;
+    margin-left: 2px;
+}
+
+.input-box {
+    width: 100%;
+}
+
+.output {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: auto;
+    margin-left: 5%;
+}
+
+.output div {
+    margin-bottom: 5px;
+}
+
+.output, .prefix, .input-form, .input-form input{
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+}
+
+.modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
