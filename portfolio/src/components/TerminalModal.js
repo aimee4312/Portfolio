@@ -92,20 +92,20 @@ const TerminalModal = ({ isOpen, onRequestClose }) => {
     return (
         <div>
             <ReactModal isOpen={isOpen} onRequestClose={handleCloseModal} className="terminal-modal" overlayClassName="modal-overlay">
-            <Header/>
-            <div className='terminal'>
-                <div className='output'>
-                    {output.map((line, index) => (
-                        <div key={index}>{line}</div>
-                    ))}
+                <Header onRequestClose={handleCloseModal} />
+                <div className='terminal'>
+                    <div className='output'>
+                        {output.map((line, index) => (
+                            <div key={index}>{line}</div>
+                        ))}
+                    </div>
+                    <form onSubmit={handleSubmit} className='input-form'>
+                        <span>{terminalPrefix}</span>
+                        <input type='text' className='input-box' value={input} onChange={handleInputChange}>
+                        </input>
+                    </form>
                 </div>
-                <form onSubmit={handleSubmit} className='input-form'>
-                    <span className='prefix'>{terminalPrefix}</span>
-                    <input type='text' className='input-box' value={input} onChange={handleInputChange}>
-                    </input>
-                </form>
-            </div>
-        </ReactModal>
+            </ReactModal>
         </div>
     )
 }

@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Tooltip } from 'react-tooltip'
 import ReactModal from 'react-modal'
-import AboutContent from './AboutContent'
 import TerminalModal from './TerminalModal'
+import AboutModal from './AboutModal'
+import ResumeModal from './ResumeModal'
 import Header from './Header'
 import '../styles/dockbar.css'
 
@@ -31,14 +32,9 @@ export default function DockBar() {
       <Tooltip id="github-tooltip" content="GitHub" className="tooltip" />
       <Tooltip id="terminal-tooltip" content="Terminal" className="tooltip" />
 
-      <ReactModal isOpen={activeModal === 'about'} onRequestClose={closeModal} className="modal-content" overlayClassName="modal-overlay"> <AboutContent/> </ReactModal> 
-      <ReactModal isOpen={activeModal === 'resume'} onRequestClose={closeModal} className="resume-content" overlayClassName="resume-overlay">
-        <div className='resume-container'>
-            <Header/>
-            <embed src="/resume.pdf" width="600px" height="550px" className="resume-embed" />
-        </div>
-        </ReactModal>
-    <TerminalModal isOpen={activeModal === 'terminal'} onRequestClose={closeModal} />
+      <ResumeModal isOpen={activeModal === 'resume'} onRequestClose={closeModal} />
+      <AboutModal isOpen={activeModal === 'about'} onRequestClose={closeModal} />
+      <TerminalModal isOpen={activeModal === 'terminal'} onRequestClose={closeModal} />
       
 
     </div>

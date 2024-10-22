@@ -1,0 +1,18 @@
+.modal-overlay {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.resume-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+.resume-content {
+    background-color: white;
+    border-radius: 8px;
+}
