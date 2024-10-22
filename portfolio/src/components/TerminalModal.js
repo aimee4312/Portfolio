@@ -19,7 +19,8 @@ const TerminalModal = ({ isOpen, onRequestClose }) => {
             "2. Terminal icons created by Smashicons - Flaticon: https://www.flaticon.com/free-icons/terminal",
             "3. Recruitment icons created by manshagraphics - Flaticon: https://www.flaticon.com/free-icons/recruitment",
             "4. Linkedin icons created by riajulislam - Flaticon: https://www.flaticon.com/free-icons/linkedin",
-            "5. Github icons created by riajulislam - Flaticon: https://www.flaticon.com/free-icons/github"
+            "5. Github icons created by riajulislam - Flaticon: https://www.flaticon.com/free-icons/github",
+            "6. Logo created by imaginationlol - Flaticon: https://www.flaticon.com/free-icons/red-envelope"
             ],
         funfacts: [
             "This is the exact theme of my terminal.",
