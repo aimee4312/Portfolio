@@ -3,7 +3,7 @@ import { Tooltip } from 'react-tooltip'
 import ReactModal from 'react-modal'
 import FinderContent from '../content/FinderContent'
 import AboutContent from '../content/AboutContent'
-import ResumeContent from '../content/ResumeContent'
+import Header from './Header'
 import '../styles/dockbar.css'
 
 export default function DockBar() {
@@ -33,9 +33,14 @@ export default function DockBar() {
       <Tooltip id="github-tooltip" content="GitHub" className="tooltip" />
       <Tooltip id="terminal-tooltip" content="Terminal" className="tooltip" />
 
-      <ReactModal isOpen={activeModal === 'finder'} onRequestClose={closeModal} content={<FinderContent />} />
-      <ReactModal isOpen={activeModal === 'about'} onRequestClose={closeModal} content={<AboutContent />} />
-      <ReactModal isOpen={activeModal === 'resume'} onRequestClose={closeModal} content={<ResumeContent />} />
+      <ReactModal isOpen={activeModal === 'finder'} onRequestClose={closeModal} className="modal-content" overlayClassName="modal-overlay"> <FinderContent/> </ReactModal>
+      <ReactModal isOpen={activeModal === 'about'} onRequestClose={closeModal} className="modal-content" overlayClassName="modal-overlay"> <AboutContent/> </ReactModal> 
+      <ReactModal isOpen={activeModal === 'resume'} onRequestClose={closeModal} className="resume-content" overlayClassName="resume-overlay">
+        <div className='resume-container'>
+            <Header/>
+            <embed src="/resume.pdf" width="600px" height="550px" className="resume-embed" />
+        </div>
+        </ReactModal>
 
       
 

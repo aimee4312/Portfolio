@@ -1,18 +1,16 @@
-.navbar {
-    font-size: 13px;
-    background-color: #F3D4FF;
-    color: #242026;
-    padding: 1%;
+.header {
+    background-color: #E9E9E9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 30px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-left: 2%;
 }
 
-.navbar-left {
-    display: flex;
-    gap: 20px;
-}
-
-.navbar-right {
-    display: flex;
-    gap: 20px;
+.circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
 }

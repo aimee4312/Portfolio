@@ -1,8 +1,19 @@
+import Header from '../components/Header';
+import '../styles/content.css'
 function AboutContent() {
     return (
-      <div>
-        <h2>About Me</h2>
-        <p>This is a brief introduction about me...</p>
+
+      <div className='container'>
+        <Header/>
+        <div className='aboutme'>
+          <div className='left'>
+            Aimee Mai
+          </div>
+          <div className='divider'></div>
+          <div className='right'>
+            <img src="/images/me.png" className="me"/>
+          </div>
+        </div>
       </div>
     );
   }
