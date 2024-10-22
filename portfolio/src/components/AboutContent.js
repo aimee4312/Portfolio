@@ -44,7 +44,7 @@ function AboutContent() {
 
         <div className='divider'></div>
         <div className='right'>
-          <img src="/images/me.png" className="me" />
+          <img src="/images/me.png" className="me" alt='photo of me'/>
         </div>
       </div>
     </div>

@@ -33,13 +33,12 @@ const TerminalModal = ({ isOpen, onRequestClose }) => {
         exit: "Goodbye!",
     }
 
-    const introMessage = [
-        `${terminalPrefix}Welcome to the terminal!`,
-        `${terminalPrefix}Commands: help, about, projects, credits, funfacts, clear, exit`,
-    ];
-
     useEffect(() => {
         if (isOpen) {
+            const introMessage = [
+                `${terminalPrefix}Welcome to the terminal!`,
+                `${terminalPrefix}Commands: help, about, projects, credits, funfacts, clear, exit`,
+            ];
             setOutput(introMessage);
         }
     }, [isOpen]);
