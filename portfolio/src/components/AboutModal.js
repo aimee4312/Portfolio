@@ -38,8 +38,10 @@ const AboutModal = ({ isOpen, onRequestClose }) => {
                         </div>
                         <hr />
                         <div className="info-item">
-                            <strong>About:</strong>
-                            <span>A passionate software engineer with a degree in Computer Science from Cal Poly SLO, I thrive on solving complex problems and adapting to new technologies. My journey in software development has allowed me to explore various programming languages, including C/C++, Python, and JavaScript frameworks like React and Node.js.
+                            <strong>About</strong>
+                        </div>
+                        <div className="info-item">
+                            <span>A software engineer with a degree in Computer Science from Cal Poly SLO. My journey in software development has allowed me to explore various programming languages, including C/C++, Python, and JavaScript frameworks like React and Node.js.
 
                                 I’m always eager to learn and grow, whether it’s through professional development or personal interests. I find inspiration in travel, which fuels my curiosity and allows me to connect with diverse cultures and perspectives. Photography and Sudoku are my favorite ways to unwind and challenge my creativity.</span>
                         </div>

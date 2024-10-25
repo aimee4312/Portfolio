@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import { Tooltip } from 'react-tooltip'
-import ReactModal from 'react-modal'
 import TerminalModal from './TerminalModal'
 import AboutModal from './AboutModal'
 import ResumeModal from './ResumeModal'
-import Header from './Header'
 import '../styles/dockbar.css'
 
 export default function DockBar() {

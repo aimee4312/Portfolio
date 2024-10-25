@@ -74,16 +74,61 @@ html, body {
 
 @media (max-width: 800px) {
     .left {
-        font-size: 2vw;
+        font-size: 1.3vw;
     }
+
     
     .me {
         width: 90%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .left {
+        font-size: 1.8vw;
+    }
+
+    .me {
+        width: 60%;
+    }
+
+    .about-modal {
+        width: 90%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .left {
+        font-size: 1.4vw;
+        overflow-y: scroll;
+    }
+
+    .me {
+        width: 60%;
+        height: 80%;
+    }
+
+    .about-modal {
+        width: 95%;
+        height: 60%;
     }
 }
 
 @media (max-width: 500px) {
     .left {
-        font-size: 1vw;
+        font-size: 1.8vw;
+        overflow-y: scroll;
+    }
+
+    .me {
+        width: 60%;
+        height: 80%;
+    }
+
+    .about-modal {
+        width: 90%;
+        height: 40%;
     }
 }

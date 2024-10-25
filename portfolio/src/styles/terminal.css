@@ -53,3 +53,23 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 800px) {
+    .terminal-modal {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .terminal-modal {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .terminal-modal {
+        height: 60%;
+    }
+}

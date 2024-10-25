@@ -4,15 +4,23 @@
     width: 100%;
 }
 
-.resume-overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+.resume-modal {
+    background-color: white;
+    height: 65%;
+    border-radius: 8px;
 
 }
 
-.resume-content {
-    background-color: white;
-    border-radius: 8px;
+@media (max-width: 900px) {
+    .resume-modal {
+        height: 60%;
+    }
+}
+
+@media (max-width: 800px) {
+    .resume-modal {
+        height: 70vh;
+        width: 80%;
+    }
+
 }

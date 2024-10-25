@@ -14,12 +14,12 @@ export default function navbar() {
       return date.toLocaleDateString('en-US', options).replace(',', '');;
     }
     return (
-    <div class="navbar">
-      <div class="navbar-left">
+    <div className="navbar">
+      <div className="navbar-left">
         <div style={{ fontWeight: 'bold'}}> Jiahua 'Aimee' Mai </div>
-        <div> aimee4312@gmail.com </div>
+        <div style={{ textDecoration: 'none'}}> aimee4312@gmail.com </div>
       </div>
-      <div class="navbar-right">
+      <div className="navbar-right">
         <div>{formatDate(today)}</div>
         <div>{currentTime}</div>
       </div>

@@ -22,8 +22,15 @@
 - [ ] Organize projects within folders
 - [ ] Enhance UI/UX for better user experience
 
-## Patch Notes - October 21, 2024
-### Completed Tasks
+## Patch Notes
+
+### V1.2 - Octover 22, 2024
+- Fixed some dynamic issues with mobile browser
+
+### V1.1 - Octover 22, 2024
+- Fixed the modals
+
+### V1 - October 21, 2024
 - Implemented the initial terminal interface with basic commands
 - Enabled command input and output display functionality
 - Integrated introductory messages for terminal modal

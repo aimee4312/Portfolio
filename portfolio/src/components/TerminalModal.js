@@ -12,8 +12,13 @@ const TerminalModal = ({ isOpen, onRequestClose }) => {
 
     const cmds = {
         help: "Available commands: help, about, projects, credits, funfacts, clear, exit",
-        about: "hi",
-        projects: "none rn lol",
+        about: "I’m a recent software engineering grad from Cal Poly SLO. Outside of tech, I enjoy photography and exploring new places, always looking for inspiration in everyday moments.",
+        projects: [
+            "Type in the name of the project for more details: ",
+            "Doozy",
+            "SLOCALS",
+            "Smiski World"
+            ],
         credits:[
             "1. Avatar icons created by Freepik - Flaticon: https://www.flaticon.com/free-icons/avatar",
             "2. Terminal icons created by Smashicons - Flaticon: https://www.flaticon.com/free-icons/terminal",
@@ -31,6 +36,44 @@ const TerminalModal = ({ isOpen, onRequestClose }) => {
 
         ],
         clear: "",
+        doozy: [
+            "Doozy",
+            "Doozy is a mobile productivity app designed to help users manage their tasks and stay organized. It provides features like user authentication, activity tracking, and a timeline display for seamless user experience.",
+            "Tech Stack",
+            "Frontend: React Native",
+            "Backend: Firebase",
+            "Database: Firebase Firestore",
+            "Authentication: Firebase Authentication",
+            "Contributions",
+            "Developed and implemented user management features, including user authentication and profile settings.",
+            "Designed and set up the Firebase database structure to support dynamic data management.",
+            "Created user interfaces for profiles and timelines, ensuring a smooth and organized presentation of activities.",
+        ],
+        slocals: [
+            "SLOCALS",
+            "SLOCALS is a community-driven platform that connects locals and visitors, offering a range of services and activities to enhance the experience of exploring a new city. The app allows users to discover local events, book experiences, and interact with other community members.",
+            "Tech Stack",
+            "Frontend: Vue.js",
+            "Backend: Node.js with Express",
+            "Database: MongoDB",
+            "Authentication: JSON Web Tokens (JWT)",
+            "Contributions",
+            "Assisted in developing the frontend using React, creating responsive and user-friendly interfaces.",
+            "Contributed to building the backend with Node.js and Express, implementing RESTful APIs for data handling.",
+        ],
+        smiskiworld: [
+            "Smiski World",
+            "Smiski World is a single page application designed for collecting and trading Smiski characters. Users can keep track of their collections, engage in trading with other users, and participate in a chat forum to share tips, experiences, and connect with fellow enthusiasts.",
+            "Tech Stack",
+            "Frontend: Lit",
+            "Backend: Node.js with Express",
+            "Database: MongoDB",
+            "Contributions",
+            "Developed the frontend using Lit, creating an intuitive user interface for managing collections and trading activities.",
+            "Assisted in setting up the backend with Node.js and Express, implementing RESTful APIs for efficient data management.",
+            "Integrated MongoDB for data storage, enabling users to track their collections and trade interactions seamlessly.",
+            "Developed a chat forum feature to enhance user interaction and community engagement within the app.",
+        ],
         exit: "Goodbye!",
     }
 
@@ -50,7 +93,7 @@ const TerminalModal = ({ isOpen, onRequestClose }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const cmd = input.trim().toLowerCase();
+        const cmd = input.trim().toLowerCase().replace(/\s+/g, '');
         if (cmd === 'exit') {
             handleCloseModal();
             return;
@@ -58,7 +101,7 @@ const TerminalModal = ({ isOpen, onRequestClose }) => {
 
         let response;
 
-        if (cmd === 'credits') {
+        if (cmd === 'credits' || cmd === 'projects' || cmd === 'doozy' || cmd === 'slocals' || cmd === 'smiskiworld') {
             response = cmds[cmd].map((line, index) => <div key={index}>{line}</div>);
         } else if (cmd === 'funfacts') {
             response = getRandomFunFact();
